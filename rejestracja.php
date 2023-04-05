@@ -45,7 +45,7 @@ if(!isset($_POST['regulamin'])){
     $_SESSION['e_regulamin']="Potwierdź akceptację regulaminu!";
 }
 
-$sekret = "6LfizFslAAAAAFRLI5xZ-K-k50ijA74j2y_Yn_Ut";
+$sekret = "coscos";
 @$sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
 $odpowiedz = json_decode($sprawdz);
 if($odpowiedz->success == false){
